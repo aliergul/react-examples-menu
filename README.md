@@ -1,8 +1,17 @@
-# React + Vite
+# Basic React Sliding Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu projede Vite ile bir React projesi oluşturarak basit bir menü örneği oluşturdum. Buradaki amaç aktif tabı ve buna bağlı olarak css class'larını yönetmekti. 3 farklı menü örneği oluşturdum.
 
-Currently, two official plugins are available:
+https://react-examples-menu.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 📷 Ekran Görüntüleri
+
+![image](https://github.com/user-attachments/assets/868d93df-e7b6-4aa5-b7b6-b76e58832ba8)
+
+
+
+
+
+
+
