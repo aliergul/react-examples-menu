@@ -4,19 +4,27 @@ import MenuItem from "./Menu/MenuItem";
 function App() {
   return (
     <>
-      <Menu variant="horizontal">
+      <Menu variant="horizontal" current={0}>
         <MenuItem>Hakkımda</MenuItem>
         <MenuItem>İletişim</MenuItem>
-        <MenuItem className="active">Blog</MenuItem>
+        <MenuItem>Blog</MenuItem>
         <MenuItem>Makaleler</MenuItem>
         <MenuItem>Dersler</MenuItem>
       </Menu>
 
-      <Menu variant="vertical">
+      <Menu variant="horizontal-filled" current={1}>
         <MenuItem>Hakkımda</MenuItem>
         <MenuItem>İletişim</MenuItem>
         <MenuItem>Blog</MenuItem>
-        <MenuItem className="active">Makaleler</MenuItem>
+        <MenuItem>Makaleler</MenuItem>
+        <MenuItem>Dersler</MenuItem>
+      </Menu>
+
+      <Menu variant="vertical" current={2}>
+        <MenuItem>Hakkımda</MenuItem>
+        <MenuItem>İletişim</MenuItem>
+        <MenuItem>Blog</MenuItem>
+        <MenuItem>Makaleler</MenuItem>
         <MenuItem>Dersler</MenuItem>
       </Menu>
     </>

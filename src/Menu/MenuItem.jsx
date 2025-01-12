@@ -3,9 +3,10 @@ import { useContext } from "react";
 import MenuContext from "./Context";
 
 const MenuItem = ({ children, ...props }) => {
-  const { setPosition } = useContext(MenuContext);
+  const { setPosition, setActive } = useContext(MenuContext);
 
   const handleClick = (e) => {
+    setActive([...e.target.parentElement.children].indexOf(e.target));
     const { width, height } = e.target.getBoundingClientRect();
     const left = e.target.offsetLeft;
     const top = e.target.offsetTop;

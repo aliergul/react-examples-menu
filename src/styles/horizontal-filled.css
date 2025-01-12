@@ -1,0 +1,38 @@
+.horizontal-filled {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 1200px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.horizontal-filled button {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 300ms all;
+  border-radius: 3px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.horizontal-filled .divider {
+  position: absolute;
+  background-color: deepskyblue;
+  top: var(--top);
+  height: var(--height);
+  left: var(--left);
+  width: var(--width);
+  transition: 300ms all;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.horizontal-filled button.active {
+  color: #000;
+}

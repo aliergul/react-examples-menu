@@ -1,5 +1,6 @@
 @import "./styles/horizontal.css";
 @import "./styles/vertical.css";
+@import "./styles/horizontal-filled.css";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
