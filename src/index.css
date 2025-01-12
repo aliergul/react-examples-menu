@@ -13,10 +13,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+* {
+  padding: 0;
   margin: 0;
+  list-style: none;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.horizontal {
+  position: relative;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.horizontal button {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.horizontal .divider {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: deepskyblue;
+  left: var(--left);
+  width: var(--width);
+  transition: 300ms all;
+  border-radius: 3px 3px 0 0;
 }
