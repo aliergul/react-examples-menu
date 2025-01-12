@@ -15,8 +15,9 @@ const Menu = ({ children, variant = "horizontal" }) => {
   useEffect(() => {
     const activeElement = ref.current.querySelector(".active");
     if (activeElement) {
-      const { top, width, height } = activeElement.getBoundingClientRect();
+      const { width, height } = activeElement.getBoundingClientRect();
       const left = activeElement.offsetLeft;
+      const top = activeElement.offsetTop;
       setPosition({ left, top, width, height });
     }
   }, []);

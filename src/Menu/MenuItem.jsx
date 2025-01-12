@@ -6,8 +6,9 @@ const MenuItem = ({ children, ...props }) => {
   const { setPosition } = useContext(MenuContext);
 
   const handleClick = (e) => {
-    const { top, width, height } = e.target.getBoundingClientRect();
+    const { width, height } = e.target.getBoundingClientRect();
     const left = e.target.offsetLeft;
+    const top = e.target.offsetTop;
     setPosition({ left, top, width, height });
   };
   return (
